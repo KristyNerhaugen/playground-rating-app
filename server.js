@@ -22,6 +22,14 @@ const sess = {
 
 app.use(session(sess));
 
+// if we use helpers, require helpers:
+// const helpers = require("./utils/helpers");
+// const hbs = exphbs.create({ helpers });
+
+// if we use handlebars, we'll need to uncomment the following:
+// app.engine("handlebars", hbs.engine);
+// app.set("view engine", "handlebars");
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
