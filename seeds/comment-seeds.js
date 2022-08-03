@@ -2,263 +2,252 @@ const { Comment } = require('../models');
 
 const commentdata = [
   {
-    comment_text: 'Nunc rhoncus dui vel sem.',
+    comment_text: 'Nice park.',
     user_id: 6,
     post_id: 1
   },
   {
-    comment_text: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
+    comment_text: 'Are there bathrooms at this park?',
     user_id: 6,
     post_id: 8
   },
   {
-    comment_text: 'Aliquam erat volutpat. In congue.',
+    comment_text: 'Thanks for posting! Love this place.',
     user_id: 3,
     post_id: 10
   },
   {
-    comment_text: 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
+    comment_text: 'Oh, I want to go there!',
     user_id: 3,
     post_id: 14
   },
   {
-    comment_text: 'In hac habitasse platea dictumst.',
+    comment_text: 'Wish I lived closer.',
     user_id: 7,
     post_id: 5
   },
   {
-    comment_text: 'Vivamus vestibulum sagittis sapien.',
+    comment_text: 'Does it have play equipment for little kids?',
     user_id: 1,
     post_id: 12
   },
   {
-    comment_text: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
+    comment_text: 'Does anyone know when the concerts are happening at this park this summer?',
     user_id: 6,
     post_id: 7
   },
   {
-    comment_text: 'Sed vel enim sit amet nunc viverra dapibus.',
+    comment_text: 'Favorite picnic spot.',
     user_id: 7,
     post_id: 4
   },
   {
-    comment_text: 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.',
+    comment_text: 'Had a hard time finding it.',
     user_id: 6,
     post_id: 12
   },
   {
-    comment_text: 'Morbi a ipsum.',
+    comment_text: 'How close is this park to the public library?',
     user_id: 6,
     post_id: 10
   },
   {
-    comment_text: 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
+    comment_text: 'We love to sled here in the winter.',
     user_id: 3,
     post_id: 14
   },
   {
-    comment_text: 'Donec ut mauris eget massa tempor convallis.',
+    comment_text: 'Had a bad experience here.',
     user_id: 5,
     post_id: 4
   },
   {
-    comment_text:
-      'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
+    comment_text:'Last time I was here there was a lot of graffiti. Has it been cleaned up yet?',
     user_id: 4,
     post_id: 9
   },
   {
-    comment_text:
-      'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
+    comment_text: 'Went here on vacation.  Highlight of the trip.',
     user_id: 5,
     post_id: 14
   },
   {
-    comment_text: 'Quisque porta volutpat erat.',
+    comment_text: 'Is it near a swimming pool?',
     user_id: 6,
     post_id: 2
   },
   {
-    comment_text: 'Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.',
+    comment_text: 'Kids like to ride their bikes there.',
     user_id: 8,
     post_id: 2
   },
   {
-    comment_text:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
+    comment_text: 'I got married here!!!! Love it so much!',
     user_id: 2,
     post_id: 2
   },
   {
-    comment_text: 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.',
+    comment_text: 'Watchout for the lady who walks her dog here every morning at 9am.  Not very nice.',
     user_id: 4,
     post_id: 11
   },
   {
-    comment_text:
-      'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
+    comment_text: 'Remember to pack sunscreen!',
     user_id: 5,
     post_id: 13
   },
   {
-    comment_text:
-      'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',
+    comment_text: 'What hours is it open?',
     user_id: 9,
     post_id: 12
   },
   {
-    comment_text: 'Curabitur convallis.',
+    comment_text: 'My kids always have thier birthday parties here.  We love it.',
     user_id: 6,
     post_id: 4
   },
   {
-    comment_text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+    comment_text: 'Too crowded!',
     user_id: 4,
     post_id: 10
   },
   {
-    comment_text: 'Morbi non quam nec dui luctus rutrum.',
+    comment_text: 'Does it have nice benches to sit on?',
     user_id: 3,
     post_id: 8
   },
   {
-    comment_text:
-      'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.',
+    comment_text: 'City does a nice job keeping this park clean.',
     user_id: 8,
     post_id: 10
   },
   {
-    comment_text:
-      'Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.',
+    comment_text: 'How big is the picnic shelter?',
     user_id: 1,
     post_id: 15
   },
   {
-    comment_text: 'Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.',
+    comment_text: 'Stop feeding the wildlife!!!!!',
     user_id: 5,
     post_id: 3
   },
   {
-    comment_text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+    comment_text: 'There was someone handing out pamphlets last time.  I left before I could find out what it was about.',
     user_id: 1,
     post_id: 15
   },
   {
-    comment_text: 'Nam tristique tortor eu pede.',
+    comment_text: 'Pretty good but not my favorite',
     user_id: 4,
     post_id: 15
   },
   {
-    comment_text: 'Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.',
+    comment_text: 'Does the bus come near here?',
     user_id: 4,
     post_id: 8
   },
   {
-    comment_text: 'Proin eu mi. Nulla ac enim.',
+    comment_text: 'Seagulls are nasty. Watch out.',
     user_id: 4,
     post_id: 10
   },
   {
-    comment_text: 'Sed ante. Vivamus tortor.',
+    comment_text: 'Sweet spot for a date night.',
     user_id: 7,
     post_id: 5
   },
   {
-    comment_text: 'Aliquam quis turpis eget elit sodales scelerisque.',
+    comment_text: 'This is everything I ever needed in a park!',
     user_id: 10,
     post_id: 1
   },
   {
-    comment_text: 'Donec quis orci eget orci vehicula condimentum.',
+    comment_text: 'Love the plays put on here in the summer.',
     user_id: 3,
     post_id: 14
   },
   {
-    comment_text: 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.',
+    comment_text: 'Warning: park will be closed this weekend for maintenance.',
     user_id: 5,
     post_id: 3
   },
   {
-    comment_text: 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.',
+    comment_text: 'Kids could play here all day every day.',
     user_id: 10,
     post_id: 14
   },
   {
-    comment_text: 'Maecenas ut massa quis augue luctus tincidunt.',
+    comment_text: 'Perfect for my 7 year old and 9 year old.',
     user_id: 10,
     post_id: 8
   },
   {
-    comment_text: 'Cras in purus eu magna vulputate luctus.',
+    comment_text: 'Have they fixed the slide yet?',
     user_id: 10,
     post_id: 11
   },
   {
-    comment_text: 'Etiam vel augue. Vestibulum rutrum rutrum neque.',
+    comment_text: 'Some creepy guy usually hanging out on the bench. Has anyone reported him yet?',
     user_id: 8,
     post_id: 5
   },
   {
-    comment_text: 'Proin at turpis a pede posuere nonummy.',
+    comment_text: 'Bring snacks.  You will be here a while.',
     user_id: 8,
     post_id: 9
   },
   {
-    comment_text: 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.',
+    comment_text: 'Always some fun surprises.',
     user_id: 9,
     post_id: 10
   },
   {
-    comment_text:
-      'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
+    comment_text: 'Adding this to our list of destinations.',
     user_id: 5,
     post_id: 4
   },
   {
-    comment_text:
-      'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.',
+    comment_text: 'Brought the grandkids here last weekend.',
     user_id: 2,
     post_id: 11
   },
   {
-    comment_text: 'Vestibulum ac est lacinia nisi venenatis tristique.',
+    comment_text: 'How often does trash get collected? Seems like the cans are always full.',
     user_id: 4,
     post_id: 6
   },
   {
-    comment_text: 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.',
+    comment_text: 'Took a break from our long road trip here.',
     user_id: 9,
     post_id: 6
   },
   {
-    comment_text:
-      'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.',
+    comment_text: 'Bring your whole family!',
     user_id: 7,
     post_id: 9
   },
   {
-    comment_text: 'Integer ac leo. Pellentesque ultrices mattis odio.',
+    comment_text: 'Great place to meet up with a friend to chat.',
     user_id: 4,
     post_id: 4
   },
   {
-    comment_text: 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',
+    comment_text: 'I like to go here on my lunch break.',
     user_id: 10,
     post_id: 1
   },
   {
-    comment_text:
-      'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.',
+    comment_text: 'New play equipment as of last year!  Super fun!',
     user_id: 2,
     post_id: 11
   },
   {
-    comment_text: 'Proin risus. Praesent lectus.',
+    comment_text: 'Gross.',
     user_id: 10,
     post_id: 1
   },
   {
-    comment_text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus.',
+    comment_text: 'Who do I contact to reserve the picnic shelter?',
     user_id: 10,
     post_id: 12
   }
