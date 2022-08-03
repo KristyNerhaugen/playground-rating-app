@@ -239,7 +239,7 @@ const commentdata = [
   {
     comment_text: 'Integer ac leo. Pellentesque ultrices mattis odio.',
     user_id: 4,
-    post_id: 19
+    post_id: 4
   },
   {
     comment_text: 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',
