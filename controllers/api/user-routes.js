@@ -72,8 +72,48 @@ router.post("/", (req, res) => {
 });
 
 // post user login route
+router.post("/login", (req, res) => {
+  User.findOne({
+    where: {
+      email: req.body.email,
+    },
+  }).then((dbUserData) => {
+    if (!dbUserData) {
+      res
+        .status(400)
+        .json({ message: "There isn't a user with that email address." });
+      return;
+    }
 
-// post user logout route
+    const validPassword = dbUserData.checkPassword(req.body.password);
+
+    if (!validPassword) {
+      res
+        .status(400)
+        .json({ message: "Incorrect password, please try again." });
+      return;
+    }
+
+    req.session.save(() => {
+      req.session.user_id = dbUserData.id;
+      req.session.username = dbUserData.username;
+      req.session.loggedIn = true;
+
+      res.json({ user: dbUserData, message: "You're logged in." });
+    });
+  });
+});
+
+// post route for user logout
+router.post("/logout", (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
+});
 
 // put user route to update by id
 router.put("/:id", (req, res) => {
