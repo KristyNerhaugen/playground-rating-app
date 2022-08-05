@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P.A.R.K.O.U.R.</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    {{!-- Google Fonts --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <div class="app-title">
+            <h1>
+                <a href="/">P<span>.</span>A<span>.</span>R<span>.</span>K<span>.</span>O<span>.</span>U<span>.</span>R<span>.</span></a>
+            </h1>
+            <p>People Around Rambunctious Kids Openly Utilizing Recreation</p>
+        </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/dashboard">Dashboard</a>
+          </li>
+          <li>
+            <button id="logout" class="btn-no-style">Logout</button>
+          </li>
+          <li>
+            <a href="/login">Login/Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Handlebars code -->
+      {{{ body }}}
+      <!-- End Handlebars -->
+    </main>
+    <footer>
+      &copy; 2022 Angela Gustafson, Joseph Kurpierz, Kristy Nerhaugen, Kayla
+      Backus
+    </footer>
+  </body>
+</html>
