@@ -34,6 +34,11 @@ Post.init(
         len: [1]
       }      
     },
+    // including image column in post table.  I set allowNull to true.  We can change it to false if that seems necessary. 
+    image: {
+      type: DataTypes.BLOB,
+      allowNull: true
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
