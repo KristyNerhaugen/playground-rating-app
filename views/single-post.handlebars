@@ -1,18 +1,4 @@
-<article>
-  <h3 class="post-title">
-    <a href="/post/{{id}}">{{post.park_name}}</a>
-  </h3>
-  <p class="post-content">
-    <strong>{{post.location}}</strong>
-    <br />
-    {{post.review}}
-    <br />
-    <span class="post-credit">Posted by
-      {{user.username}}
-      on
-      {{post.created_at}}</span>
-  </p>
-</article>
+{{> post-info post }}
 
 {{#if loggedIn}}
 <form class="comment-form">
