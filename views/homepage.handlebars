@@ -3,19 +3,21 @@
 <ul>
   {{#each posts as |post|}}
     <li>
-      <h3 class="post-title">
-        <a href="/post/{{id}}">{{park_name}}</a>
-      </h3>
-      <p class="post-content">
-        <strong>{{location}}</strong>
-        <br />
-        {{review}}
-        <br />
-        <span class="post-credit">Posted by
-          {{user.username}}
-          on
-          {{created_at}}</span>
-      </p>
+      <article>
+        <h3 class="post-title">
+          <a href="/post/{{id}}">{{park_name}}</a>
+        </h3>
+        <p class="post-content">
+          <strong>{{location}}</strong>
+          <br />
+          {{review}}
+          <br />
+          <span class="post-credit">Posted by
+            {{user.username}}
+            on
+            {{created_at}}</span>
+        </p>
+      </article>
     </li>
   {{/each}}
 </ul>

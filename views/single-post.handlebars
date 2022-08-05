@@ -1,0 +1,42 @@
+<article>
+  <h3 class="post-title">
+    <a href="/post/{{id}}">{{post.park_name}}</a>
+  </h3>
+  <p class="post-content">
+    <strong>{{post.location}}</strong>
+    <br />
+    {{post.review}}
+    <br />
+    <span class="post-credit">Posted by
+      {{user.username}}
+      on
+      {{post.created_at}}</span>
+  </p>
+</article>
+
+{{#if loggedIn}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="btn">Add Comment</button>
+    </div>
+</form>
+{{/if}}
+
+<div>
+    <h4>Comments</h4>
+    {{#each post.comments}}
+    <p class="comment-list">
+        {{comment_text}}
+        </br>
+        <span class="post-credit">Posted by {{user.username}} on {{created_at}}</span>
+    </p>
+    {{/each}}
+</div>
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
