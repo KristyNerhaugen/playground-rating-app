@@ -32,13 +32,13 @@
             <a href="/dashboard">Dashboard</a>
           </li>
           {{#if loggedIn}}
-          <li>
-            <button id="logout" class="btn-no-style">Logout</button>
-          </li>
+            <li>
+              <button id="logout" class="btn-no-style">Logout</button>
+            </li>
           {{else}}
-          <li>
-            <a href="/login">Login/Sign Up</a>
-          </li>
+            <li>
+              <a href="/login">Login/Sign Up</a>
+            </li>
           {{/if}}
         </ul>
       </nav>
@@ -52,5 +52,8 @@
       &copy; 2022 Angela Gustafson, Joseph Kurpierz, Kristy Nerhaugen, Kayla
       Backus
     </footer>
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
   </body>
 </html>
