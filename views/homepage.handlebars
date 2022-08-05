@@ -1,16 +1,18 @@
 <h2>Latest Reviews</h2>
 
 <ul>
+    {{#each posts as |post|}}
     <li>
         <h3 class="post-title">
             <a href="/post/{{id}}">{{park_name}}</a>
         </h3>
         <p class="post-content">
-            <strong>{{post_location}}</strong>
+            <strong>{{location}}</strong>
             <br>
-            {{post_review}}
+            {{review}}
             <br>
             <span class="post-credit">Posted by {{user.username}} on {{created_at}}</span>
         </p>
     </li>
+    {{/each}}
 </ul>
