@@ -1,7 +1,7 @@
 async function editFormHandler(event) {
   event.preventDefault();
 
-  const parkName = document.querySelector('input[name="park-name"]').value.trim();
+  const park_name = document.querySelector('input[name="park-name"]').value.trim();
   const location = document.querySelector('input[name="location"]').value.trim();
   const review = document.querySelector('textarea[name="review"]').value.trim();
   const id = window.location.toString().split('/')[
@@ -10,7 +10,7 @@ async function editFormHandler(event) {
   const response = await fetch(`/api/posts/${id}`, {
     method: 'PUT',
     body: JSON.stringify({
-      parkName,
+      park_name,
       location,
       review
     }),
