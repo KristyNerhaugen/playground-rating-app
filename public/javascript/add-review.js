@@ -1,14 +1,14 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
-  const parkName = document.querySelector('input[name="park-name"]').value;
+  const park_name = document.querySelector('input[name="park-name"]').value;
   const location = document.querySelector('input[name="location"]').value;
   const review = document.querySelector('textarea[name="review"]').value;
 
   const response = await fetch(`/api/posts`, {
     method: 'POST',
     body: JSON.stringify({
-      parkName,
+      park_name,
       location,
       review
     }),
