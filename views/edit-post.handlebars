@@ -13,8 +13,8 @@
         </div>
         <div class="flex flex-col mb-3">
             <p>Review</p>
-            <textarea name="review" value="{{post.review}}"
-                class="p-1 rounded border border-solid border-slate-300"></textarea>
+            <input name="review" value="{{post.review}}" type="text"
+                class="p-1 rounded border border-solid border-slate-300"></input>
         </div>
         <div class="my-3">
             <span class="post-credit text-sm italic">Posted by you on {{format_date post.created_at}}</span>
