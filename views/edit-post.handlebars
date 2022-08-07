@@ -1,32 +1,53 @@
-<article>
-    <h2>Edit Your Review</h2>
-    <form class="edit-post-form">
-        <div>
-            <input name="park-name" type="text" value="{{post.park_name}}" />
-            <input name="location" type="text" value="{{post.location}}" />
-            <textarea name="review" value="{{post.review}}"></textarea>
+<article class="flex flex-col md:flex-row mx-5 mt-5">
+    <h2 class="text-xl font-semibold">Edit Your Review</h2>
+    <form class="edit-post-form bg-white p-3 rounded shadow-md m-5">
+        <div class="flex flex-col mb-3">
+            <p>Park Name</p>
+            <input name="park-name" type="text" value="{{post.park_name}}"
+                class="p-1 rounded border border-solid border-slate-300" />
         </div>
-        <div>
-            <span class="post-credit">Posted by you on {{format_date post.created_at}}</span>
+        <div class="flex flex-col mb-3">
+            <p>Location</p>
+            <input name="location" type="text" value="{{post.location}}"
+                class="p-1 rounded border border-solid border-slate-300" />
+        </div>
+        <div class="flex flex-col mb-3">
+            <p>Review</p>
+            <textarea name="review" value="{{post.review}}"
+                class="p-1 rounded border border-solid border-slate-300"></textarea>
+        </div>
+        <div class="my-3">
+            <span class="post-credit text-sm italic">Posted by you on {{format_date post.created_at}}</span>
             </br>
-            <a href="/post/{{post.id}}" class="comment-count">{{post.comments.length}} comment(s)</a>
+            <a href="/post/{{post.id}}" class="comment-count text-sm">{{post.comments.length}} comment(s)</a>
         </div>
-        <button type="submit" class="btn">Save Changes</button>
-        <button type="button" class="delete-post-btn btn">Delete Review</button>
+        <button type="submit"
+            class="btn py-1 px-8 bg-yellow-300 hover:bg-white hover:border hover:border-yellow-300 rounded shadow-md mr-1">Save
+            Changes</button>
+        <button type="button"
+            class="delete-post-btn btn py-1 px-8 bg-yellow-300 hover:bg-white hover:border hover:border-yellow-300 rounded shadow-md">Delete
+            Review</button>
     </form>
-    
-    <form class="comment-form">
-        <div>
-            <textarea name="comment-body"></textarea>
+
+    <form class="comment-form bg-white p-3 rounded shadow-md mx-5">
+        <div class="mb-3">
+            <textarea name="comment-body" class="p-1 rounded border border-solid border-slate-300 w-full"></textarea>
         </div>
         <div>
-            <button type="submit" class="btn">Add Comment</button>
+            <button type="submit"
+                class="btn py-1 px-8 bg-yellow-300 hover:bg-white hover:border hover:border-yellow-300 rounded shadow-md">Add
+                Comment</button>
         </div>
     </form>
 
+    {{#if post.comments.length}}
     {{> comments post.comments}}
+    {{else}}
+    <h3 class="text-lg font-medium m-5">No Comments Yet</h3>
+    {{/if}}
 
 </article>
+
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
