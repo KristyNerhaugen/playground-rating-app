@@ -1,37 +1,67 @@
-<div class="forms">
-  <form class="login-form">
-    <h2>Log in here.</h2>
-    <div>
+<div class="forms flex flex-col md:flex-row mx-10 mt-10">
+  <form class="login-form bg-white p-3 rounded shadow-md mb-5 md:mr-5 md:w-1/2">
+    <h2 class="text-xl font-semibold">Log in here.</h2>
+    <div class="pt-3 px-3">
       <label for="email-login">Email</label>
-      <input type="text" id="email-login" />
+      <br />
+      <input
+        type="text"
+        id="email-login"
+        class="p-1 rounded border border-solid border-slate-300 w-full"
+      />
     </div>
-    <div>
+    <div class="p-3">
       <label for="password-login">Password</label>
-      <input type="password" id="password-login" />
+      <br />
+      <input
+        type="password"
+        id="password-login"
+        class="p-1 rounded border border-solid border-slate-300 w-full"
+      />
     </div>
-    <div>
-      <button type="submit">Login</button>
+    <div class="p-3">
+      <button
+        type="submit"
+        class="py-1 px-8 bg-yellow-300 hover:bg-white hover:border hover:border-yellow-300 rounded shadow-md"
+      >Login</button>
     </div>
   </form>
 
-  <form class="signup-form">
-    <h2>Sign up to join the community.</h2>
-    <div>
+  <form class="signup-form bg-white p-3 rounded shadow-md md:ml-5 md:w-1/2">
+    <h2 class="text-xl font-semibold">Sign up to leave a review.</h2>
+    <div class="pt-3 px-3">
       <label for="username-signup">Username</label>
-      <input type="text" id="username-signup" />
+      <input
+        type="text"
+        id="username-signup"
+        class="p-1 rounded border border-solid border-slate-300 w-full"
+      />
     </div>
-    <div>
+    <div class="pt-3 px-3">
       <label for="email-signup">Email</label>
-      <input type="text" id="email-signup" />
+      <input
+        type="text"
+        id="email-signup"
+        class="p-1 rounded border border-solid border-slate-300 w-full"
+      />
     </div>
-    <div>
+    <div class="p-3">
       <label for="password-signup">Password</label>
-      <input type="password" id="password-signup" />
+      <input
+        type="password"
+        id="password-signup"
+        class="p-1 rounded border border-solid border-slate-300 w-full"
+      />
     </div>
-    <div>
-      <button type="submit">Sign Up</button>
+    <div class="p-3">
+      <button
+        type="submit"
+        class="py-1 px-8 bg-yellow-300 hover:bg-white hover:border hover:border-yellow-300 rounded shadow-md"
+      >Sign Up</button>
     </div>
   </form>
 </div>
+
 <script src="/javascript/login.js"></script>
-<script src="/javascript/logout.js"></script>
+{{!
+<script src="/javascript/logout.js"></script> }}

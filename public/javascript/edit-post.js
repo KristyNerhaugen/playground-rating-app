@@ -3,7 +3,7 @@ async function editFormHandler(event) {
 
   const park_name = document.querySelector('input[name="park-name"]').value.trim();
   const location = document.querySelector('input[name="location"]').value.trim();
-  const review = document.querySelector('textarea[name="review"]').value.trim();
+  const review = document.querySelector('input[name="review"]').value.trim();
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
