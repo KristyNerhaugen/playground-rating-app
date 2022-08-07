@@ -1,9 +1,9 @@
-<div class="m-5">
+<div class="mx-10 mt-10">
 {{> post-info post }}
 </div>
 
 {{#if loggedIn}}
-<form class="comment-form bg-white p-3 rounded shadow-md m-5">
+<form class="comment-form bg-white p-3 rounded shadow-md mx-10 mt-5">
     <div class="mb-3">
         <textarea name="comment-body" class="p-1 rounded border border-solid border-slate-300 w-full"></textarea>
     </div>
@@ -14,7 +14,9 @@
  </form>
 {{/if}}
 
+<div class="m-5">
 {{> comments post.comments}}
+</div>
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
