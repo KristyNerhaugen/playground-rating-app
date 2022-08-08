@@ -8,6 +8,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies](#technologies)
+- [Future Developments](#future-developments)
 - [License](#license)
 - [Credits](#credits)
 
@@ -18,7 +19,7 @@
 
 
 ## Technologies
-- [autoprefixer]()
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
 - [dotenv](https://www.npmjs.com/package/dotenv)
@@ -30,9 +31,12 @@
 - [jest](https://www.npmjs.com/package/jest)
 - [MySQL2](https://www.npmjs.com/package/mysql2)
 - [Node.js](https://nodejs.dev/)
-- [PostCSS]()
+- [PostCSS](https://www.npmjs.com/package/postcss)
 - [Sequelize](https://www.npmjs.com/package/sequelize)
-- [Tailwind CSS]()
+- [Tailwind CSS](https://www.npmjs.com/package/tailwindcss)
+
+## Future Developments
+
 
 ## License
 &copy; 2022 by Angela Gustafson, Joseph Kurpierz, Kristy Nerhaugen, Kayla Backus
@@ -42,8 +46,8 @@ This project is licensed under the MIT license.
 [License: MIT License](https://opensource.org/licenses/MIT)
 
 ## Credits
-Boot Camp Modules 13 and 14
-
 Balasa, S. [Thirus]. (2021, January 10). Install Tailwind CSS as a PostCSS Plugin (Version 2.0) [Video]. YouTube. [https://youtu.be/hvm5-EGe3fU](https://youtu.be/hvm5-EGe3fU)
 
-https://tailwindcss.com/
+Boot Camp Modules 13 and 14
+
+*Tailwind CSS.* (n.d.) Tailwind CSS. Retrieved August 7-8, 2022, from [https://tailwindcss.com/](https://tailwindcss.com/)
