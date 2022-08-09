@@ -1,10 +1,10 @@
-# PARKOUR
+# PARKOUR - A Park Review App
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 PARKOUR stands for "People Around Rambunctious Kids Openly Utilizing Recreation." It's an app designed to help parents and caregivers easily find and give reviews about parks and playgrounds.
 
-Once the user creates and account, they have the ability to write, edit and delete their own reviews. They can also comment on other reviews. If the user doesn’t want to make an account, they can still view park and playground reviews.
+Once the user creates and account, they have the ability to write, edit and delete their own reviews. They can also comment on other reviews. If the user doesn’t want to make an account, they can still view park and playground reviews without the ability to comment or leave their own review.
 
 View the deployed application at [https://parkour-review.herokuapp.com/](https://parkour-review.herokuapp.com/).
 
@@ -67,6 +67,7 @@ While the user is logged in, they can go to the app's homepage to see recent rev
 
 ## License
 &copy; 2022 by Angela Gustafson, Joseph Kurpierz, Kristy Nerhaugen, Kayla Backus
+![GitHub profile photos for the four contributors.](https://contrib.rocks/image?repo=KristyNerhaugen/playground-rating-app)
 
 This project is licensed under the MIT license.
 
