@@ -2,7 +2,7 @@
 ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-This is an app designed to help parents and caregivers easily find and give reviews about parks and playgrounds.
+PARKOUR stands for "People Around Rambunctious Kids Openly Utilizing Recreation." It's an app designed to help parents and caregivers easily find and give reviews about parks and playgrounds.
 
 Once the user creates and account, they have the ability to write, edit and delete their own reviews. They can also comment on other reviews. If the user doesn’t want to make an account, they can still view park and playground reviews.
 
@@ -58,7 +58,12 @@ While the user is logged in, they can go to the app's homepage to see recent rev
 - [Tailwind CSS](https://www.npmjs.com/package/tailwindcss)
 
 ## Future Developments
-
+- Add a star rating system to make positive and negative reviews easier to see at a glance.
+- Integrate a map or a list of locations for users to choose from.
+- Implement an average rating system for parks that have more than one review. 
+- Include feature tags like "picnic area," "restrooms," "beach," etc.
+- Connect the app with [playgroundsafety.org](https://playgroundsafety.org/) so that the user can easily submit a safety report if a park/playground is in need of attention.
+- Incorporate a social feature that allows users to plan playground meetups through the application.
 
 ## License
 &copy; 2022 by Angela Gustafson, Joseph Kurpierz, Kristy Nerhaugen, Kayla Backus
