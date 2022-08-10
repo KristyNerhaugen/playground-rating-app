@@ -6,7 +6,14 @@ const withAuth = require("../../utils/auth");
 // route to get all posts/reviews
 router.get("/", (req, res) => {
   Post.findAll({
-    attributes: ["id", "park_name", "location", "review", "created_at"],
+    attributes: [
+      "id",
+      "park_name",
+      "location",
+      "review",
+      "imageData",
+      "created_at",
+    ],
     order: [["created_at", "DESC"]],
     include: [
       {
@@ -36,7 +43,14 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "park_name", "location", "review", "created_at"],
+    attributes: [
+      "id",
+      "park_name",
+      "location",
+      "review",
+      "imageData",
+      "created_at",
+    ],
     include: [
       {
         model: Comment,
@@ -72,6 +86,7 @@ router.post("/", withAuth, (req, res) => {
     park_name: req.body.park_name,
     location: req.body.location,
     review: req.body.review,
+    imageData: req.body.imageData,
     user_id: req.session.user_id,
   })
     .then((dbPostData) => res.json(dbPostData))
@@ -87,6 +102,7 @@ router.put("/:id", withAuth, (req, res) => {
       park_name: req.body.park_name,
       location: req.body.location,
       review: req.body.review,
+      imageData: req.body.imageData,
     },
     {
       where: {
